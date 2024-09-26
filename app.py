@@ -3,8 +3,10 @@ import subprocess
 import json
 import os
 import re
+from flask_cors import CORS
 
 app = Flask(__name__)
+CORS(app)  # Enable CORS for all routes
 
 app.config['DEBUG'] = False
 
